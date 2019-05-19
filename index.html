@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="author" content="Grayrids">
+		<title>Data Visualization and Communication</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/line-icons.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/owl.theme.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/nivo-lightbox.css">
+		<link rel="stylesheet" href="css/main.css">    
+		<link rel="stylesheet" href="css/responsive.css">
+		<style>
+		.section-header .section-title{
+			background-color: #3c96ff!important;
+			background-image: linear-gradient(to top left, #3c96ff, #3c96ff)!important;
+		}
+		</style>
+
+	</head>
+  
+	<body>
+
+		<!-- Header Section Start -->
+		<header id="home" class="hero-area-2">    
+			<div class="overlay"></div>
+			<nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+				<div class="container"> 
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="lni-menu"></i>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarCollapse">
+						<ul class="navbar-nav mr-auto w-100 justify-content-end">
+							<li class="nav-item">
+								<a class="nav-link page-scroll" href="#home">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link page-scroll" href="#Geo-visualization">Geo-visualization</a>
+							</li> 
+							<li class="nav-item">
+								<a class="nav-link page-scroll" href="#Time-series">Time-series</a>
+							</li> 							
+							<li class="nav-item">
+								<a class="nav-link page-scroll" href="#Deviation">Deviation</a>
+							</li>                            
+							<li class="nav-item">
+								<a class="nav-link page-scroll" href="#Distribution">Distribution</a>
+							</li> 
+							<li class="nav-item">
+								<a class="nav-link page-scroll" href="#Correlation">Correlation</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link page-scroll" href="#Part-to-whole">Part-to-whole</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>  
+			<div class="container" style="padding-bottom: 10em;">      
+				<div class="row space-100">
+					<div class="col-lg-12 col-md-12 col-xs-12">
+						<div class="contents" align="right">
+							<h2 class="head-title">Data Visualization and Communication <br></h2>
+							<h3 style="color: #fff;">6114552407 Nuttrachai Promptsook</h3>
+							<div class="header-button">
+								<a href="#" class="btn btn-border-filled" style="  font-size: 2em;">Final Presentation</a>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>             
+		</header>
+		<!-- Header Section End --> 
+
+		<!-- Geo-visualization Section Start -->
+		<div id="Geo-visualization" class="screens-shot section">
+			<div class="container">
+				<div class="section-header">   
+					<p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.5s">Geo-visualization</p>       
+					<h3 class="section-title wow fadeIn" data-wow-delay="0.5s" style="">Thailand and neighbor GDP per capita (US$) 2017</h3>
+				</div>
+				<div class="row">
+					<div id="regions_div" style="width: 100%; height: 450px;"></div>
+					Source	: <a href="https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?end=2017&locations=Z4&start=2007&type=points&view=chart" target="_blank">https://data.worldbank.org/</a>
+				</div>
+			</div>
+		</div>
+		<!-- Geo-visualization Section End -->
+
+		<!-- Time-series Section Start -->
+		<div id="Time-series" class="section">
+			<div class="container">
+				<div class="section-header">   
+					<p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.5s">Time-series</p>       
+					<h3 class="section-title wow fadeIn" data-wow-delay="0.5s" >Thailand and neighbor GDP per capita growth (annual %)</h3>
+				</div>
+				<div class="row">
+					<div id="chart_div" style="width: 100%; height: 450px;"></div>
+					Source	: <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=Z4" target="_blank">https://data.worldbank.org/</a>
+					<!-- https://www.softnix.co.th/2019/03/26/%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%AA%E0%B8%B5%E0%B9%83%E0%B8%99-data-visualization/ -->
+				</div>
+			</div>
+		</div>
+		<!-- Time-series Section End -->
+
+ 		<!-- Deviation Section Start -->
+		<section id="Deviation" class="screens-shot section">
+			<div class="container">
+				<div class="section-header">   
+					<p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.5s">Deviation</p>       
+					<h3 class="section-title">Thailand and neighbor GDP Growth Rates (Compare World Average)</h3>
+				</div>
+				<div class="row">
+					<div id="deviation" style="width: 100%; height: 450px;"></div>
+					Source	: <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=Z4" target="_blank">https://data.worldbank.org/</a>
+					<!-- https://www.softnix.co.th/2019/03/26/%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%AA%E0%B8%B5%E0%B9%83%E0%B8%99-data-visualization/ -->
+				</div>
+			</div>
+		</section>
+		<!-- Deviation Section End -->  
+
+		<!-- Distribution Section Start -->
+		<section id="Distribution" class="section">
+			<div class="container">
+				<div class="section-header">   
+					<p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.5s">Distribution Histogram</p>       
+					<h3 class="section-title">Thailand GDP Growth Rates (2001 - 2017)</h3>
+				</div>
+				<div class="row">
+					<div id="histogram" style="width: 100%; height: 450px;"></div>
+					Source	: <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=Z4" target="_blank">https://data.worldbank.org/</a>
+					<!-- https://www.softnix.co.th/2019/03/26/%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%AA%E0%B8%B5%E0%B9%83%E0%B8%99-data-visualization/ -->
+
+				</div>
+			</div>
+		</section>
+		<!-- Distribution Section End -->  
+		
+		<!-- Correlation Section -->
+		<div id="Correlation" class="screens-shot section">
+			<div class="section-header">   
+				<p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.5s">Correlation</p>       
+			</div>		
+			<!-- Container Ends -->
+			<div class="container">
+				<!-- Row and Scroller Wrapper Starts -->
+				<div class="row" >
+					<div id="arg_div" style="width: 49%; height: 450px;"></div>
+					<div id="nonarg_div" style="width: 49%; height: 450px; padding-left: 1em;"></div>
+					Source1: <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=Z4" target="_blank">https://data.worldbank.org/</a>
+					,	Source2	: <a href="http://www.nesdb.go.th/main.php?filename=qgdp_page" target="_blank">สำนักงานสภาพัฒนาการเศรษฐกิจและสังคมแห่งชาติ</a>
+				</div>
+			</div>
+		</div>
+		<!-- Correlation Section End --> 
+		
+		<!-- Part-to-whole Section Start -->
+		<section id="Part-to-whole" class="section">
+			<div class="container">
+				<div class="section-header">   
+					<p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.5s">Part-to-whole</p>       
+					<h3 class="section-title">Non-Agriculture in Thailand GDP 2017</h3>
+				</div>
+				<div class="row">
+					<div id="pieChart" style="width: 100%; height: 450px;"></div>
+					Source1: <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=Z4" target="_blank">https://data.worldbank.org/</a>
+					,	Source2	: <a href="http://www.nesdb.go.th/main.php?filename=qgdp_page" target="_blank">สำนักงานสภาพัฒนาการเศรษฐกิจและสังคมแห่งชาติ</a>
+				</div>
+			</div>
+		</section>
+		<!-- Part-to-whole Section End --> 		
+
+		<!-- Preloader -->
+		<div id="preloader">
+		  <div class="loader" id="loader-1"></div>
+		</div>
+		<!-- End Preloader -->
+
+		<!-- jQuery first, then Tether, then Bootstrap JS. -->
+		<script src="js/jquery-min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.js"></script> 
+		<script src="js/jquery.mixitup.js"></script>       
+		<script src="js/jquery.nav.js"></script>    
+		<script src="js/scrolling-nav.js"></script>    
+		<script src="js/jquery.easing.min.js"></script>     
+		<script src="js/wow.js"></script>   
+		<script src="js/jquery.counterup.min.js"></script>     
+		<script src="js/nivo-lightbox.js"></script>     
+		<script src="js/jquery.magnific-popup.min.js"></script>     
+		<script src="js/waypoints.min.js"></script>      
+		<script src="js/main.js"></script>
+		<script src="https://www.gstatic.com/charts/loader.js"></script>	
+		<script>
+			google.charts.load('current', {
+				'packages':['geochart'],
+				// Note: you will need to get a mapsApiKey for your project.
+				// See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+				'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+			});
+			google.charts.setOnLoadCallback(drawRegionsMap);
+			function drawRegionsMap() {
+				var data = google.visualization.arrayToDataTable([
+					['Country', 'GDP per capita'],
+					['Cambodia',	1384.423187],
+					["LA",	2457.377414],
+					['Malaysia',	9951.544153],
+					['Myanmar',	1256.660675],
+					['Thailand',	6595.004125],
+					['Vietnam',	2342.244003]
+				]);
+				var options = {};
+				options['region'] = 'TH';
+				options['colorAxis']	=	{colors: ['#a0e7a0', 'green']};
+
+				var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+				chart.draw(data, options);
+			}
+			  
+			google.charts.load('current', {packages: ['corechart', 'line']});
+			google.charts.setOnLoadCallback(drawCurveTypes);
+
+			function drawCurveTypes() {
+				var data = new google.visualization.DataTable();
+				var data = google.visualization.arrayToDataTable([
+					['Year', 'Cambodia', 'Lao PDR', 'Malaysia', 'Myanmar', 'Thailand', { role: 'annotation'}, 'Vietnam'],
+					[2013, 5.599918784, 6.705811096, 2.803783623, 7.45301583, 2.236675835, '2.237', 4.21688206],
+					[2014, 5.40187153, 6.272785911, 4.178597991, 7.000969064, 0.580417497, '0.58',4.784398867],
+					[2015, 5.333422892, 5.85998123, 3.397848423, 6.013869218, 2.658813525, '2.659', 5.508820999],
+					[2016, 5.203878487, 5.528425711, 2.672420491, 4.898526951, 2.973849715, '2.974', 5.090510776],
+					[2017, 5.473812703, 5.337134727, 4.433674457, 5.787698479, 3.650982958,  '3.651',5.725877848]
+				]);
+
+				var options = {
+					hAxis: {
+					  title: 'Year',
+					  ticks: [2013,2014,2015,2016,2017]
+					},
+					vAxis: {
+					  title: 'GDP Growth Rate(%)'
+					},
+					series: {
+					  1: {curveType: 'function'}
+					},
+					legend: { position: 'top' },
+					/*title: 'Thailand and neighbor GDP per capita growth (annual %)',*/
+					series: {
+						0: { color: '#C8E5C9' },
+						1: { color: '#C8E5C9' },
+						2: { color: '#C8E5C9' }, /*008001*/
+						3: { color: '#C8E5C9' },
+						4: { color: '#3EA73E', curveType: 'function', lineWidth: 5 },
+						5: { color: '#C8E5C9' },
+					}					
+				};
+
+				var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+				chart.draw(data, options);
+			}
+
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawVisualization);
+
+			function drawVisualization() {
+				// Some raw data (not necessarily accurate)
+				var data = google.visualization.arrayToDataTable([
+					['Year', 'Cambodia', 'Lao PDR', 'Malaysia', 'Myanmar', 'Thailand', 'Vietnam', 'World'],
+					[2013, 2.914, 3.686, 0.959, 4.209, 0.563, 1.947, 0],
+					[2014, 2.328, 2.865, 1.575, 3.314, -0.642, 1.948, 0],
+					[2015, 2.222, 2.540, 1.052, 2.633, 0.606, 2.327, 0],
+					[2016, 2.731, 2.964, 0.916, 2.512, 1.132, 2.650, 0],
+					[2017, 1.769, 1.700, 1.243, 1.928, 0.847, 1.897, 0],
+				]);
+
+				var options = {
+					vAxis: {title: 'Difference(%)'},
+					hAxis: {
+					  title: 'Year',
+					  ticks: [2013,2014,2015,2016,2017]					  
+					},					
+					seriesType: 'bars',
+					series: {
+						0: { color: '#C8E5C9' },
+						1: { color: '#C8E5C9' },
+						2: { color: '#C8E5C9' }, /*008001*/
+						3: { color: '#C8E5C9' },
+						4: { color: '#3EA73E', curveType: 'function', lineWidth: 5 },
+						5: { color: '#C8E5C9' },
+						6: { type: 'line'}
+					},
+					legend: { position: 'top' }
+				};
+
+				var chart = new google.visualization.ComboChart(document.getElementById('deviation'));
+				chart.draw(data, options);
+			}
+			
+			google.charts.load("current", {packages:["corechart"]});
+			google.charts.setOnLoadCallback(drawHistogram);
+			function drawHistogram() {
+				var data = google.visualization.arrayToDataTable([
+					['Year', 'GDP(annual %)'],
+					['2001', 2.49],
+					['2002', 5.27],
+					['2003', 6.39],
+					['2004', 5.56],
+					['2005', 3.51],
+					['2006', 4.33],
+					['2007', 4.84],
+					['2008', 1.19],
+					['2009', -1.19],
+					['2010', 6.99],
+					['2011', 0.36],
+					['2012', 6.75],
+					['2013', 2.24],
+					['2014', 0.58],
+					['2015', 2.66],
+					['2016', 2.97],
+					['2017', 3.65]]);
+
+				var options = {
+					legend: { position: 'top' },
+					vAxis: {
+					  title: 'Total'
+					},          
+					hAxis: {
+						title: 'GDP Growth Rate(%)',
+						ticks: [-2, 0, 2, 4, 6, 8, 10]
+					}          
+				};
+
+				var chart = new google.visualization.Histogram(document.getElementById('histogram'));
+				chart.draw(data, options);
+			}
+			
+			google.charts.load('current', {'packages':['scatter']});
+			google.charts.setOnLoadCallback(drawCorrelation1);
+
+			function drawCorrelation1 () {
+
+				var data = new google.visualization.DataTable();
+				data.addColumn('number', 'GDP');
+				data.addColumn('number', 'Agriculture');
+
+				data.addRows([
+					[1345988, 108570],
+					[1315910, 99731],
+					[1312620, 96097],
+					[1370495, 154338],
+					[1430289, 123193],
+					[1408751, 111978],
+					[1419013, 106479],
+					[1511525, 160074],
+					[1573721, 143676],
+					[1524943, 127817],
+					[1558175, 129361],
+					[1660463, 195788],
+					[1693075, 149118],
+					[1683223, 133941],
+					[1721026, 141963],
+					[1856947, 221320],
+					[1866057, 157593],
+					[1828806, 135639],
+					[1902797, 160799],
+					[2016749, 246348],
+					[2114529, 194678],
+					[2046561, 167535],
+					[2074688, 170102],
+					[2164877, 257861],
+					[2258185, 199033],
+					[2187394, 185167],
+					[2236015, 176086],
+					[2394713, 288404],
+					[2448505, 226677],
+					[2445108, 235798],
+					[2464337, 217854],
+					[2348982, 297687],
+					[2359120, 220341],
+					[2342864, 223945],
+					[2395559, 200770],
+					[2561113, 300549],
+					[2750666, 271332],
+					[2652168, 272835],
+					[2656617, 250764],
+					[2748700, 342645],
+					[2960338, 345909],
+					[2810947, 311319],
+					[2852142, 279837],
+					[2683467, 373930],
+					[3046740, 350849],
+					[2993771, 314261],
+					[3052067, 304350],
+					[3264760, 452502],
+					[3287976, 377456],
+					[3140025, 326065],
+					[3178307, 309606],
+					[3308854, 449498],
+					[3320684, 360795],
+					[3242173, 312915],
+					[3257701, 267719],
+					[3409744, 393724],
+					[3432443, 325394],
+					[3334430, 279411],
+					[3413807, 251894],
+					[3562784, 363099],
+					[3599387, 309573],
+					[3553840, 289777],
+					[3615034, 260143],
+					[3786308, 370468],
+					[3828275, 356264],
+					[3753658, 316053],
+					[3843646, 263908],
+					[4026381, 350361]
+				]);
+
+				var options = {
+					chart: {
+						title: 'GDP and Agriculture',
+						subtitle: 'based on GDP'
+					},
+					hAxis: {title: 'GDP'},
+					vAxis: {title: 'Agriculture'},
+					legend: {position: 'none'}
+				};
+
+				var chart = new google.charts.Scatter(document.getElementById('arg_div'));
+				chart.draw(data, google.charts.Scatter.convertOptions(options));
+			}
+
+			google.charts.load('current', {'packages':['scatter']});
+			google.charts.setOnLoadCallback(drawCorrelation2);
+
+			function drawCorrelation2 () {
+
+				var data = new google.visualization.DataTable();
+				data.addColumn('number', 'GDP');
+				data.addColumn('number', 'Non-Agriculture');
+
+				data.addRows([
+					[1345988, 1237418],
+					[1315910, 1216179],
+					[1312620, 1216523],
+					[1370495, 1216157],
+					[1430289, 1307096],
+					[1408751, 1296773],
+					[1419013, 1312534],
+					[1511525, 1351451],
+					[1573721, 1430045],
+					[1524943, 1397126],
+					[1558175, 1428814],
+					[1660463, 1464675],
+					[1693075, 1543957],
+					[1683223, 1549282],
+					[1721026, 1579063],
+					[1856947, 1635627],
+					[1866057, 1708464],
+					[1828806, 1693167],
+					[1902797, 1741998],
+					[2016749, 1770401],
+					[2114529, 1919851],
+					[2046561, 1879026],
+					[2074688, 1904586],
+					[2164877, 1907016],
+					[2258185, 2059152],
+					[2187394, 2002227],
+					[2236015, 2059929],
+					[2394713, 2106309],
+					[2448505, 2221828],
+					[2445108, 2209310],
+					[2464337, 2246483],
+					[2348982, 2051295],
+					[2359120, 2138779],
+					[2342864, 2118919],
+					[2395559, 2194789],
+					[2561113, 2260564],
+					[2750666, 2479334],
+					[2652168, 2379333],
+					[2656617, 2405853],
+					[2748700, 2406055],
+					[2960338, 2614429],
+					[2810947, 2499628],
+					[2852142, 2572305],
+					[2683467, 2309537],
+					[3046740, 2695891],
+					[2993771, 2679510],
+					[3052067, 2747717],
+					[3264760, 2812258],
+					[3287976, 2910520],
+					[3140025, 2813960],
+					[3178307, 2868701],
+					[3308854, 2859356],
+					[3320684, 2959889],
+					[3242173, 2929258],
+					[3257701, 2989982],
+					[3409744, 3016020],
+					[3432443, 3107049],
+					[3334430, 3055019],
+					[3413807, 3161913],
+					[3562784, 3199685],
+					[3599387, 3289814],
+					[3553840, 3264063],
+					[3615034, 3354891],
+					[3786308, 3415840],
+					[3828275, 3472011],
+					[3753658, 3437605],
+					[3843646, 3579738],
+					[4026381, 3676020]
+
+				]);
+
+				var options = {
+					chart: {
+						title: 'GDP and Non-Agriculture',
+						subtitle: 'based on GDP'
+					},
+					hAxis: {title: 'GDP'},
+					vAxis: {title: 'Non-Agriculture'},
+					legend: {position: 'none'}
+				};
+
+				var chart = new google.charts.Scatter(document.getElementById('nonarg_div'));
+
+				chart.draw(data, google.charts.Scatter.convertOptions(options));
+			}	
+			
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawPartToWhole);
+
+			function drawPartToWhole() {
+
+				var data = google.visualization.arrayToDataTable([
+					['Non-Agriculture', 'Millions of Baht'],
+					['Manu-facturing', 4221534],
+					['Wholesale and Retail Trade,Repair of Vehicles and Personal and Household Goods', 2480121],
+					['Financial Intermediation', 1165802],
+					['Transport,storage and Communi-cation', 1128143],
+					['Real Estate,Renting and Business Activities', 967397],
+					['Public Administration and Defence;Compulsory Social Security', 917530],
+					['Hotels and Restaurants', 818037],
+					['Education', 636281],
+					['Electricity,Gas and Water Supply', 446082],
+					['Other', 1384447]
+				]);
+					
+				var chart = new google.visualization.PieChart(document.getElementById('pieChart'));
+				chart.draw(data);
+			}			
+		</script>    
+	</body>
+</html>
