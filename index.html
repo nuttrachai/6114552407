@@ -244,23 +244,21 @@
 				var options = {
 					hAxis: {
 					  title: 'Year',
-					  ticks: [2013,2014,2015,2016,2017]
+					  ticks: [2013,2014,2015,2016,2017],
+					  format: '0000'
 					},
 					vAxis: {
 					  title: 'GDP Growth Rate(%)'
 					},
-					series: {
-					  1: {curveType: 'function'}
-					},
 					legend: { position: 'top' },
 					/*title: 'Thailand and neighbor GDP per capita growth (annual %)',*/
 					series: {
-						0: { color: '#C8E5C9' },
-						1: { color: '#C8E5C9' },
-						2: { color: '#C8E5C9' }, /*008001*/
-						3: { color: '#C8E5C9' },
+						0: { color: '#D2F3E0' },
+						1: { color: '#FEB9C8' },
+						2: { color: '#FFF591' }, /*008001*/
+						3: { color: '#DEDEDE' },
 						4: { color: '#3EA73E', curveType: 'function', lineWidth: 5 },
-						5: { color: '#C8E5C9' },
+						5: { color: '#FFEBD3' },
 					}					
 				};
 
@@ -274,28 +272,29 @@
 			function drawVisualization() {
 				// Some raw data (not necessarily accurate)
 				var data = google.visualization.arrayToDataTable([
-					['Year', 'Cambodia', 'Lao PDR', 'Malaysia', 'Myanmar', 'Thailand', 'Vietnam', 'World'],
-					[2013, 2.914, 3.686, 0.959, 4.209, 0.563, 1.947, 0],
-					[2014, 2.328, 2.865, 1.575, 3.314, -0.642, 1.948, 0],
-					[2015, 2.222, 2.540, 1.052, 2.633, 0.606, 2.327, 0],
-					[2016, 2.731, 2.964, 0.916, 2.512, 1.132, 2.650, 0],
-					[2017, 1.769, 1.700, 1.243, 1.928, 0.847, 1.897, 0],
+					['Year', 'Cambodia', 'Lao PDR', 'Malaysia', 'Myanmar', 'Thailand', { role: 'annotation'}, 'Vietnam', 'World'],
+					[2013, 2.914, 3.686, 0.959, 4.209, 0.563, '0.563', 1.947, 0],
+					[2014, 2.328, 2.865, 1.575, 3.314, -0.642, '-0.642', 1.948, 0],
+					[2015, 2.222, 2.540, 1.052, 2.633, 0.606, '0.606', 2.327, 0],
+					[2016, 2.731, 2.964, 0.916, 2.512, 1.132, '1.132', 2.650, 0],
+					[2017, 1.769, 1.700, 1.243, 1.928, 0.847, '0.847', 1.897, 0],
 				]);
 
 				var options = {
 					vAxis: {title: 'Difference(%)'},
 					hAxis: {
 					  title: 'Year',
-					  ticks: [2013,2014,2015,2016,2017]					  
+					  ticks: [2013,2014,2015,2016,2017],
+					  format: '0000'
 					},					
 					seriesType: 'bars',
 					series: {
-						0: { color: '#C8E5C9' },
-						1: { color: '#C8E5C9' },
-						2: { color: '#C8E5C9' }, /*008001*/
-						3: { color: '#C8E5C9' },
-						4: { color: '#3EA73E', curveType: 'function', lineWidth: 5 },
-						5: { color: '#C8E5C9' },
+						0: { color: '#D2F3E0' },
+						1: { color: '#FEB9C8' },
+						2: { color: '#FFF591' }, /*008001*/
+						3: { color: '#DEDEDE' },
+						4: { color: '#3EA73E', curveType: 'function', lineWidth: 5, textStyle: { bold:'true' } },
+						5: { color: '#FFEBD3' },
 						6: { type: 'line'}
 					},
 					legend: { position: 'top' }
