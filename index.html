@@ -559,9 +559,13 @@
 					['Electricity,Gas and Water Supply', 446082],
 					['Other', 1384447]
 				]);
+				
+				var options = {
+				  colors: ['#3EA73E', '#E3C4A8','#6FC2D0','#8AC2FF','#ACC6AA','#FFCCD0','#D8A3FF','#F58B54','#71A0A5','#F8CCFF'],
+				};				
 					
 				var chart = new google.visualization.PieChart(document.getElementById('pieChart'));
-				chart.draw(data);
+				chart.draw(data, options);
 			}			
 		</script>    
 	</body>
